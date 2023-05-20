@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MainFragment">
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/stayfittop" />
+
+    <ImageView
+        android:id="@+id/signOutButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/power_bg"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_baseline_power_settings_new_24" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topImageView"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/welcomeText"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/welcome2Text"
+            android:layout_marginTop="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ptLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/recyclerview_bg">
+
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/recyclerview_bg"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:id="@+id/ptNameSurnameText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginVertical="4dp"
+                    android:id="@+id/ptProfilePicImage"
+                    android:src="@drawable/ic_baseline_person_pin_24"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:enabled="false"
+                    android:background="@drawable/about_me_selector"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:id="@+id/ptFeeText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="/ section"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold" />
+
+
+                <ImageView
+                    android:layout_marginVertical="4dp"
+                    android:id="@+id/editFeeButton"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_edit_note_24"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_me"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:id="@+id/aboutMeText" />
+
+
+                <ImageView
+                    android:id="@+id/editAboutMeButton"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_edit_note_24"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/classNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:enabled="false"
+                android:background="@drawable/about_me_selector"
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/ptDescText"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

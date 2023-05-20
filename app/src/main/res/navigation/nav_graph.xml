@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInModeFragment">
+    <fragment
+        android:id="@+id/PTSignInFragment"
+        android:name="com.stayfit.stayfit.fragment.PTSignInFragment"
+        android:label="fragment_p_t_sign_in"
+        tools:layout="@layout/fragment_p_t_sign_in" >
+        <action
+            android:id="@+id/action_PTSignInFragment_to_PTSignUpFragment"
+            app:destination="@id/PTSignUpFragment" />
+        <action
+            android:id="@+id/action_PTSignInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInModeFragment"
+        android:name="com.stayfit.stayfit.fragment.SignInModeFragment"
+        android:label="fragment_sign_in_mode"
+        tools:layout="@layout/fragment_sign_in_mode" >
+        <action
+            android:id="@+id/action_signInModeFragment_to_userSignInFragment"
+            app:destination="@id/userSignInFragment" />
+        <action
+            android:id="@+id/action_signInModeFragment_to_PTSignInFragment"
+            app:destination="@id/PTSignInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSignInFragment"
+        android:name="com.stayfit.stayfit.fragment.UserSignInFragment"
+        android:label="fragment_user_sign_in"
+        tools:layout="@layout/fragment_user_sign_in" >
+        <action
+            android:id="@+id/action_userSignInFragment_to_userSignUpFragment"
+            app:destination="@id/userSignUpFragment" />
+        <action
+            android:id="@+id/action_userSignInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSignUpFragment"
+        android:name="com.stayfit.stayfit.fragment.UserSignUpFragment"
+        android:label="fragment_user_sign_up"
+        tools:layout="@layout/fragment_user_sign_up" />
+    <fragment
+        android:id="@+id/PTSignUpFragment"
+        android:name="com.stayfit.stayfit.fragment.PTSignUpFragment"
+        android:label="fragment_p_t_sign_up"
+        tools:layout="@layout/fragment_p_t_sign_up" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.stayfit.stayfit.fragment.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+</navigation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_2"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.stayfit.stayfit.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/classesFragment"
+        android:name="com.stayfit.stayfit.fragment.ClassesFragment"
+        android:label="fragment_classes"
+        tools:layout="@layout/fragment_classes" >
+        <action
+            android:id="@+id/action_classesFragment_to_classesDetailsFragment2"
+            app:destination="@id/classesDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/myClassesFragment"
+        android:name="com.stayfit.stayfit.fragment.MyClassesFragment"
+        android:label="fragment_my_classes"
+        tools:layout="@layout/fragment_my_classes" >
+        <action
+            android:id="@+id/action_myClassesFragment_to_classesDetailsFragment2"
+            app:destination="@id/classesDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ptFragment"
+        android:name="com.stayfit.stayfit.fragment.PersonalTrainersFragment"
+        android:label="fragment_personal_trainers"
+        tools:layout="@layout/fragment_personal_trainers" >
+        <action
+            android:id="@+id/action_ptFragment_to_PTrainersDetailsFragment"
+            app:destination="@id/PTrainersDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classesDetailsFragment2"
+        android:name="com.stayfit.stayfit.fragment.ClassesDetailsFragment"
+        android:label="fragment_classes_details"
+        tools:layout="@layout/fragment_classes_details">
+
+        <argument
+            android:name="gclass"
+            app:argType="com.stayfit.stayfit.model.GClass"/>
+    </fragment>
+    <fragment
+        android:id="@+id/PTrainersDetailsFragment"
+        android:name="com.stayfit.stayfit.fragment.PTrainersDetailsFragment"
+        android:label="fragment_p_trainers_details"
+        tools:layout="@layout/fragment_p_trainers_details">
+
+        <argument
+            android:name="ptmodel"
+            app:argType="com.stayfit.stayfit.model.PtModel"/>
+    </fragment>
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.stayfit.stayfit.fragment.RequestsFragment"
+        android:label="fragment_requests"
+        tools:layout="@layout/fragment_requests" />
+    <fragment
+        android:id="@+id/customersFragment"
+        android:name="com.stayfit.stayfit.fragment.CustomersFragment"
+        android:label="fragment_customers"
+        tools:layout="@layout/fragment_customers" />
+</navigation>

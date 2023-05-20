@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">StayFit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pt_login">PT Login</string>
+    <string name="login">Login</string>
+    <string name="enter_e_mail_address">Enter e-mail address</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_my_password">Forgot my password</string>
+    <string name="don_t_you_have_an_account">Don\'t you have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forget_pass_desc">After typing your e-mail address in the space below and clicking the OK button, a link will be sent to your e-mail address to reset your password. You can check your inbox in a few minutes.</string>
+    <string name="ok">ok</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_your_password_again">Enter your password again</string>
+    <string name="user_login">User Login</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="home">Home</string>
+    <string name="my_classes">My Classes</string>
+    <string name="classes">Classes</string>
+    <string name="pt">PT</string>
+    <string name="requests">Requests</string>
+    <string name="customers">Customers</string>
+    <string name="leg_day_desc">While training, we should pay attention to the proportional and proper development of the whole body. To prevent a disproportionate appearance; Even if you are doing regional work, some days we should work your other muscle groups to ensure that the development is balanced. Equal distribution of the change throughout the body is very important for you to gain an aesthetic appearance. In general, it is one of the biggest mistakes that athletes make, skipping the leg muscles. However, even in bodybuilding training, leg muscles should be supported. We seem to forget that your legs will take on the task of carrying your developing muscles and large body.</string>
+    <string name="chest_day_desc">The chest is one of the most enjoyable muscle groups to train, but also one of the muscle groups that many people struggle to develop. There are many chest exercises in the training world. While you are thinking about which one will be better for you, sometimes you get confused and even if you try all the moves to make it look good, this article is for you.</string>
+    <string name="back_workout_day_desc">Back muscles are one of the most important muscle groups in the human body. These muscles, which prevent the person from slouching and keep the body upright, are strengthened by back movements, dumbbell movements and wing movements. Developing the back muscles is kind of the same as developing the Trapezes. You can easily do exercises to develop back muscles along with wing movements at home.</string>
+    <string name="add_to_my_classes">Add to My Classes</string>
+    <string name="exit_my_classes">Exit My Classes</string>
+    <string name="enter_name_surname">Enter name and surname..</string>
+    <string name="pt_desc">Do you want to have a more flexible, stronger and well-posted body? I can assist you in creating the path to find what you need. As a sports physiotherapist, after a holistic evaluation, I can create a special program for you and actively support you in reaching your goal. </string>
+    <string name="personal_trainers">Personal Trainers</string>
+    <string name="exitstring">Sign out</string>
+    <string name="yesstring">Yes</string>
+    <string name="cancelstring">Cancel</string>
+    <string name="exit_desc">Are you sure you want to sign out of your account?</string>
+    <string name="work_with">Work with</string>
+    <string name="hi_i_want_to_work_with_you">Hi, I want to work with you!</string>
+    <string name="send">Send</string>
+    <string name="about_me">ABOUT ME</string>
+</resources>
